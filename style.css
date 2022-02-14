@@ -28,6 +28,8 @@ body {
   height:500px;
   margin:2em;
   border-radius:10px;
+  justify-content: center;
+  align-self: center;
 
 }
 .righttext {
@@ -35,18 +37,31 @@ body {
   padding-right: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
+  object-fit: scale-down;
+  justify-content: center;
+  align-self: center;
 
 }
-h1.intro {
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:500px;
+  font-family: 'Poppins';
+  font-weight: 900;
+  background-image: url(./pinktop.jpg);
+  background-position: center;
+  background-size: contain;
+  margin-top: 5em;
+
+}
+h1.intro-txt {
   font-size: 5em;
   color:rgba(255,240,225,1);
   text-shadow: 1px 1px 20px rgba(0,0,200,1);
-  position:absolute;
-  top:35%;
-  right:40%;
-  font-family: 'Poppins';
-  font-weight: 900;
-
+  text-align: center;
 }
 .nav {
   padding: 1em;
@@ -81,6 +96,12 @@ li {
 
 }
 
+a:active, a:hover, a:link, a:visited {
+  text-decoration: none;
+  text-shadow: 1px 1px 20px rgba(0,0,200,1);
+  color:rgba(255,240,225,1);
+}
+
 .logo {
   font-size: 2em;
   font-family: 'Poppins', sans-serif;
@@ -96,19 +117,14 @@ li {
 }
 
 
-img.ban {
-  height:600px;
-  width:1900px;
-  object-fit: cover;
-  background-color: inherit;
-}
+
 section {
   display: flex;
   flex-direction: column;
   padding:1em;
-  margin:1em;
   justify-content: center;
-  width:80%;
+  align-items: center;
+  width:100%;
 
 }
 .sec-body {
@@ -128,7 +144,7 @@ section {
   padding: 4em;
 
 }
-.aboutus,.directions,.contact,.socialm {
+.aboutus,.directions,.contact,.gallery {
 
   text-align: center;
   color:rgba(255,240,255,1);
@@ -139,18 +155,6 @@ section {
 
 }
 
-.directions {
-
-
-}
-
-.contact {
-
-}
-
-.socialm {
-
-}
 #one {
 
   order:one;
@@ -206,5 +210,244 @@ footer {
 
 .copyright-text {
   color:white;
+
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1550px) {
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:500px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    background-image: url(./pinktop.jpg);
+    background-position: center;
+    background-size: contain;
+    margin-top: 8em;
+
+  }
+  h1.intro-txt {
+    font-size: 5em;
+    color:rgba(255,240,225,1);
+    text-shadow: 1px 1px 20px rgba(0,0,200,1);
+    text-align: center;
+  }
+  .nav {
+
+    display: flex;
+    flex-direction: column;
+    top:0;
+    width:100%;
+    height:3em;
+    position: fixed;
+    text-shadow: 1px 1px 20px rgba(0,0,200,1);
+    color:rgba(255,240,225,1);
+
+  }
+  ul.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  li {
+    margin-right: 2em;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 2em;
+
+  }
+
+    a:active, a:hover, a:link, a:visited {
+      text-decoration: none;
+      text-shadow: 1px 1px 20px rgba(0,0,200,1);
+      color:rgba(255,240,225,1);
+  }
+
+  .container {
+
+    padding-bottom: 2em;
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width:100%;
+
+
+
+  }
+
+  .logo {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 20px rgba(0,0,200,1);
+    color:rgba(255,240,225,1);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    padding:1em;
+    justify-content: center;
+    width:80%;
+
+  }
+  .sec-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2em;
+    width:100%;
+  }
+  .sec-body-right {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2em;
+    width:100%
+
+  }
+  footer {
+
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  .copyright {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+    color:white;
+    margin-top: 1em;
+
+  }
+  .socialfooter {
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+    width:100%;
+
+
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .nav {
+
+    display: flex;
+    flex-direction: column;
+    top:0;
+    width:100%;
+    height:3em;
+    position: fixed;
+    text-shadow: 1px 1px 20px rgba(0,0,200,1);
+    color:rgba(255,240,225,1);
+
+  }
+  ul.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  li {
+    margin-right: 1em;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.5em;
+
+  }
+
+  .container {
+
+    padding-bottom: 2em;
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width:100%;
+  }
+  .leftimg {
+    object-fit: scale-down;
+    border-radius:10px;
+  }
+  .socialfooter {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:90%;
+
+  }
+
+  .sec-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:80%;
+  }
+  .sec-body-right {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:80%
+
+  }
+  footer {
+
+    display:flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  .socialfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
 
 }
