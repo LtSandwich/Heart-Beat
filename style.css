@@ -24,9 +24,10 @@ body {
 
 
 }
-.leftimg {
+img.leftimg {
   height:500px;
   margin:2em;
+  border-radius:100%;
 
 }
 .righttext {
