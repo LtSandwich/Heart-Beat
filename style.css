@@ -6,14 +6,18 @@
 }
 
 body {
-  background-color: rgba(255,120,120,1);
+  background-color: rgba(255,150,180,1);
 
+}
+#start {
+  top:0;
+  position: absolute;
 }
 
 .container {
 
   padding-bottom: 2em;
-  margin: 5em auto;
+  margin: 1em auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +34,8 @@ body {
   border-radius:10px;
   justify-content: center;
   align-self: center;
+  border: 15px solid white;
+  background-origin: border-box;
 
 }
 .righttext {
@@ -48,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   width:100%;
-  height:500px;
+  height:900px;
   font-family: 'Poppins';
   font-weight: 900;
   background-image: url(./pinktop.jpg);
@@ -73,6 +79,7 @@ h1.intro-txt {
   position: fixed;
   text-shadow: 1px 1px 20px rgba(0,0,200,1);
   color:rgba(255,240,225,1);
+  
 
 }
 
@@ -125,6 +132,7 @@ section {
   justify-content: center;
   align-items: center;
   width:100%;
+  margin-top: 1em;
 
 }
 .sec-body {
@@ -159,26 +167,26 @@ section {
 
   order:one;
   font-weight: bold;
-  background-color: rgba(250,150,250,.4);
+  background-color: rgba(100,0,0,.05);
   color:rgba(255,240,255,1);
   text-shadow: 1px 1px 4px black;
 }
 #two {
   order:two;
-  background-color: rgba(250,150,250,.3);
+  background-color: rgba(100,0,0,.05);
   color:rgba(255,240,255,1);
   text-shadow: 1px 1px 4px black;
 }
 #three {
   order:three;
   font-weight: bold;
-  background-color: rgba(250,150,250,.2);
+  background-color: rgba(100,0,0,.05);
   color:rgba(255,240,255,1);
   text-shadow: 1px 1px 4px black;
 }
 #four{
   order:four;
-  background-color: rgba(250,150,250,.1);
+  background-color: rgba(100,0,0,.05);
   color:rgba(255,240,255,1);
   text-shadow: 1px 1px 4px black;
 }
@@ -213,8 +221,19 @@ footer {
 
 }
 
-.topnav .icon {
-  display: none;
+.top {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width:95%;
+  bottom: 5em;
+
+}
+
+#topicon {
+  width:32px;
+  background-color: rgba(255,200,255,.4);
 }
 
 @media screen and (max-width: 1550px) {
