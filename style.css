@@ -221,14 +221,15 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width:95%;
+  width:97%;
   bottom: 5em;
 
 }
 
 #topicon {
-  width:32px;
+  width:42px;
   background-color: rgba(255,200,255,.4);
+  border-radius: 30%;
 }
 
 @media screen and (max-width: 1550px) {
@@ -566,6 +567,9 @@ footer {
     background-origin: border-box;
 
 
+  }
+  .copyright {
+    font-size: 1em;
   }
 
 }
