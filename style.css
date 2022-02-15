@@ -467,7 +467,7 @@ footer {
   }
 
   li {
-    margin-right: 1em;
+    margin-right: .3em;
     text-decoration: none;
     font-family: inherit;
     font-size: 1.5em;
@@ -558,6 +558,11 @@ footer {
     list-style: none;
     font-family: 'Shadows Into Light', cursive;
   }
+  li {
+    font-size: 2em;
+    margin:0;
+    padding:0;
+  }
 
   .container {
 
@@ -568,7 +573,11 @@ footer {
     align-items: center;
     align-content: center;
     justify-content: center;
-    width:80%;
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left:0;
+    margin-right:0;
 
 
 
@@ -592,23 +601,13 @@ footer {
     justify-content: center;
     align-self: center;
     width:100%;
+    padding-left:0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 
   }
-  .intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height:200px;
-    font-family: 'Poppins';
-    font-weight: 700;
-    background-image: url(./pinktop.jpg);
-    background-position: center;
-    background-size: contain;
-    margin-top:14em;
 
-  }
   h1.big-text {
     font-size: 2em;
     color:rgba(255,240,225,1);
@@ -632,7 +631,22 @@ footer {
     font-size: 1em;
   }
   .intro2 {
-    margin-top: 8em;
+    margin-top: 17em;
+    height:200px;
+  }
+
+  section {
+    margin:0;
+    padding: 0;
+  }
+
+  .nav {
+    position: absolute;
+    top:0;
+  }
+  .logo {
+    background-color: rgba(0,0,0,.1);
+    border-radius: 5px;
   }
 
 }
